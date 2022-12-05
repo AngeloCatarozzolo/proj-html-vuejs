@@ -1,22 +1,26 @@
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import appHeaderVue from './components/appHeader.vue';
+import appMainVue from './components/appMain.vue';
+import appFooter from './components/appFooter.vue';
 
 export default {
   components: {
-    HelloWorld
+    appHeaderVue,
+    appMainVue,
+    appFooterVue,
+    
   }
 }
 </script>
 
 <template>
-  <div class="container">
-    <HelloWorld />
-  </div>
-  <div class="container-small">
-    <HelloWorld />
+  <div>
+    <appHeaderVue></appHeaderVue>
+    <appMainVue></appMainVue>
+    <appFooterVue></appFooterVue>
   </div>
 </template>
 
 <style lang="scss">
-@import './style/global.scss';
+
 </style>
