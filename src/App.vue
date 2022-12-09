@@ -1,13 +1,13 @@
 <script>
-import appHeaderVue from './components/appHeader.vue';
-import appMainVue from './components/appMain.vue';
+import appHeader from './components/appHeader.vue';
+import appMain from './components/appMain.vue';
 import appFooter from './components/appFooter.vue';
 
 export default {
   components: {
-    appHeaderVue,
-    appMainVue,
-    appFooterVue,
+    appHeader,
+    appMain,
+    appFooter,
     
   }
 }
@@ -15,9 +15,9 @@ export default {
 
 <template>
   <div>
-    <appHeaderVue></appHeaderVue>
-    <appMainVue></appMainVue>
-    <appFooterVue></appFooterVue>
+    <appHeader></appHeader>
+    <appMain></appMain>
+    <appFooter></appFooter>
   </div>
 </template>
 
