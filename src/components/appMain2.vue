@@ -7,8 +7,12 @@ export default {
 <template>
     <div class="container">
         <div class="h-main">
-            <h2>See Our Top Notch Services</h2>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit volupatatem <br> accusantium doloremque laudantium</p>
+            <div class="center">
+                <h2>See Our Top Notch Services</h2>
+            </div>
+            <div class="center">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit volupatatem <br> accusantium doloremque laudantium</p>
+            </div>
         </div>
         <div class="b-main">
             <div class="card">
@@ -41,21 +45,27 @@ export default {
 
 <style lang="scss" scoped>
 .container{
+
     background-image: url(../assets/pattern_background.png);
     width: 100%;
-    height: 100%;
-    background-color: blue;
+    height: 31.25rem;
+    background-color: #1a236c;
 
     .h-main{
-        display: flex;
-        justify-content: center;
+
+        .center{
+            display: flex;
+            justify-content: center;
+        }
     }
     .b-main{
+        margin-left: 31.25rem;
+        margin-right: 31.25rem;
         display: flex;
         justify-content: space-between;
         .card{
             width: 12.5rem;
-            background-color: aqua;
+            background-color: #2a1999;
             .orange{
                 color: orange;
             }

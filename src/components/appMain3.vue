@@ -7,8 +7,12 @@ export default {
 <template>
     <div class="container">
         <div class="h-main">
-            <h2>Our Work</h2>
-            <p>Sed ut perspiciatis unde omni iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+            <div class="center">
+                <h2>Our Work</h2>
+            </div>
+            <div class="center">
+                <p>Sed ut perspiciatis unde omni iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+            </div>
         </div>
         <div class="b-main">
             <div class="riga">
@@ -41,14 +45,21 @@ export default {
 <style lang="scss" scoped>
     .container{
         .h-main{
-            display: flex;
+            .center{
+                display: flex;
+                justify-content: center;
+            }
         }
         .b-main{
             display: flex;
             justify-content: center;
             .riga{
                 .card{
-                margin-left: .625rem;
+                    margin-left: .625rem;
+                    img{
+                        width: 250px;
+                        height: 150px;
+                    }
                 }
             }
         }

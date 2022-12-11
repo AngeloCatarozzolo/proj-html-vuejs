@@ -59,7 +59,7 @@ export default {
     margin-left: 31.25rem;
   }
   .logo{
-      height: 100px;
+      height: 50px;
       width: 62.5rem;
       float: right;
       display: flex;

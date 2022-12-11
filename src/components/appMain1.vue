@@ -7,8 +7,12 @@ export default {
 <template>
   <div class="container">
     <div class="h-main">
-      <h2><strong>Meet The New Agency SEO Template <br> From The Avada Team</strong></h2>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit volupatatem <br> accusantium doloremque laudantium</p>
+      <div class="center">
+        <h2><strong>Meet The New Agency SEO Template <br> From The Avada Team</strong></h2>
+      </div>
+      <div class="center">
+        <p>Sed ut perspiciatis unde omnis iste natus error sit volupatatem <br> accusantium doloremque laudantium</p>
+      </div>
     </div>
     <div class="b-main">
       <div class="card">
@@ -35,18 +39,25 @@ export default {
 
 <style lang="scss" scoped>
 .container{
+  margin-left: 31.25rem;
+  margin-right: 31.25rem;
   align-items: center;
   .h-main{
-  display: flex;
-  justify-content: center;
+    .center{
+      display: flex;
+      justify-content: center;
+    }
   
   }
   .b-main{
     display: flex;
     justify-content: space-between;
-    p{
-    color: gray;
-  }
+    .card{
+      p{
+        color: gray;
+      }
+    }
+    
 
   }
   .f-main{
