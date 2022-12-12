@@ -2,12 +2,12 @@
 export default {
   name: 'appFooter',
 
-  props:{
-    txt: String,
-    },
-   created() {
-    this.txt = 'Home'
-    }
+   props:{
+     txt: String,
+     },
+    created() {
+     this.txt = 'Home'
+     }
 }
 </script>
 
