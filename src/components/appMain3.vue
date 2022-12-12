@@ -38,12 +38,13 @@ export default {
                 </div>
             </div>
         </div>
-        <button>VIEW OUR WORK</button>
+        <button class="orange">VIEW OUR WORK</button>
     </div>
 </template>
 
 <style lang="scss" scoped>
     .container{
+        
         .h-main{
             .center{
                 display: flex;
@@ -62,6 +63,7 @@ export default {
                     }
                 }
             }
+            
         }
     }
 </style>

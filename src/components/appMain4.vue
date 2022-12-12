@@ -7,8 +7,12 @@ export default {
 <template>
     <div class="container">
         <div class="h-main">
-            <h2>Our Plans</h2>
-            <p>Sed ut perspiciatis unde omnis iste naturs error sit voluptatem accusantium doloremque laudantium.</p>
+            <div class="center">
+                <h2>Our Plans</h2>
+            </div>    
+            <div class="center">    
+                <p>Sed ut perspiciatis unde omnis iste naturs error sit voluptatem accusantium doloremque laudantium.</p>
+            </div>
         </div>
         <div class="b-main">
             <div class="card">
@@ -50,17 +54,23 @@ export default {
 <style lang="scss" scoped>
 .container{
     background-image: url(../assets/background1.jpg);
+    height: 25rem;
     .h-main{
-        display: flex;
-        justify-content: center;
+        .center{
+            display: flex;
+            justify-content: center;
+        }
     }
     .b-main{
+        margin-left: 31.25rem;
+        margin-right: 31.25rem;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between;;
+        
         .card{
             background-color: white;
-            width: 18.75rem;
-            margin-left: .625rem;
+            width: 150px;
+           
         }
     }
 }

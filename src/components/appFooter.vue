@@ -1,6 +1,13 @@
 <script>
 export default {
   name: 'appFooter',
+
+  props:{
+    txt: String,
+    },
+   created() {
+    this.txt = 'Home'
+    }
 }
 </script>
 
@@ -11,7 +18,7 @@ export default {
   </div>
   <nav>
     <ul class="nav-link">
-      <li><a href="#"> Home</a></li>
+      <li><a href="#"> {{txt}}</a></li>
       <li><a href="#">Who We Are</a></li>
       <li><a href="#">What We Do</a></li>
       <li><a href="#">Where We Work</a></li>

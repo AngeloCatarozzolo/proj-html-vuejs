@@ -1,18 +1,25 @@
 <script>
 export default {
   name: 'appHeader',
+  props:{
+    txt: String,
+    },
+   created() {
+    this.txt = 'Home'
+    }
 }
+
 </script>
 
 <template>
   <div class="container">
     <div class="h-header">
       <div class="logo">
-        <img src="../assets/logo_seo_w_1x.png" alt="logo">
+        <img src="../assets/logo_seo_w_1x.png" alt="">
       </div>
       <nav>
         <ul class="nav-link">
-          <li><a href="#"> Home</a></li>
+          <li><a href="#">Home</a></li>
           <li><a href="#">Who We Are</a></li>
           <li><a href="#">What We Do</a></li>
           <li><a href="#">Where We Work</a></li>
@@ -41,14 +48,16 @@ export default {
   .b-orange{
     color: white;
     background-color: #ffa837;
-    //border da fixare
-    border-radius: 20%;
+    width: 9.375rem;
+    height: 2.5rem;
+    border-radius: 10%;
   }
   .b-blue{
     color: white;
     background-color: #0369d7;
-    //border da fixare
-    border-radius: 20%;
+    width: 8.125rem;
+    height: 2.5rem;
+    border-radius: 10%;
   }
   .h-header{
     display: flex;
@@ -57,6 +66,12 @@ export default {
   .b-header{
     margin-top: 9.375rem;
     margin-left: 31.25rem;
+    h1{
+      font-size: 2.5rem;
+    }
+    p{
+      font-size: 1.25rem;
+    }
   }
   .logo{
       height: 50px;

@@ -7,8 +7,12 @@ export default {
 <template>
     <div class="container">
         <div class="h-main">
-            <h2>Our News</h2>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+            <div class="center">
+                <h2>Our News</h2>   
+            </div>
+            <div class="center">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+            </div>
         </div>
         <div class="b-main">
             <div class="card">
@@ -35,10 +39,20 @@ export default {
 
 <style lang="scss" scoped>
 .container{
+    .h-main{
+        margin-top: 6.25rem;
+        .center{
+            display: flex;
+            justify-content: center;
+        }
+    }
     .b-main{    
+        margin-left: 25rem;
+        margin-right: 25rem;
         display: flex;
         justify-content: space-between;
         .card{
+            
             width: 18.75rem;
         }
     }
