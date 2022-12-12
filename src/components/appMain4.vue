@@ -21,7 +21,7 @@ export default {
                 <p>5 Projects</p>
                 <p>5 GB Storage</p>
                 <p>Unlimited Users</p>
-                <button>START TODAY</button>
+                <button class="orange">START TODAY</button>
             </div>
             <div class="card">
                 <h4>Premium</h4>
@@ -29,7 +29,7 @@ export default {
                 <p>10 Projects</p>
                 <p>15 GB Storage</p>
                 <p>Unlimited Users</p>
-                <button>START TODAY</button>
+                <button class="orange">START TODAY</button>
             </div>
             <div class="card">
                 <h4>Professional</h4>
@@ -37,7 +37,7 @@ export default {
                 <p>15 Projects</p>
                 <p>30 GB Storage</p>
                 <p>Unlimited Users</p>
-                <button>START TODAY</button>
+                <button class="orange">START TODAY</button>
             </div>
             <div class="card">
                 <h4>Extreme</h4>
@@ -45,7 +45,7 @@ export default {
                 <p>Unlimited Projects</p>
                 <p>Unlimited Storage</p>
                 <p>Unlimited Users</p>
-                <button>START TODAY</button>
+                <button class="orange">START TODAY</button>
             </div>
         </div>
     </div>
@@ -70,8 +70,18 @@ export default {
         .card{
             background-color: white;
             width: 150px;
-           
+            button{
+            border-radius: 10%;
+                button:hover{
+                    color: orange;
+                   
+                    position: absolute;
+                    height: 5px;
+                    width: 0;
+                    left: 0;
+                }
         }
     }
+}
 }
 </style>
